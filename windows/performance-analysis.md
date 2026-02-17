@@ -7,7 +7,7 @@ User reports computer feels slow during multitasking.
 2/16/2026
 
 **Initial Hypothesis:**  
-High CPU, memory, or disk utilization.
+Potential high CPU, memory, or disk utilization causing resource bottleneck.
 
 **Baseline Metrics:**  
 CPU:  14%
@@ -15,12 +15,17 @@ Memory: 81%
 Disk:  1%
 
 **Stress Test Performed:**  
-Opened 15 Chrome tabs and streamed YouTube video.
+Opened 15 Chrome tabs and streamed a YouTube video to simulate heavy multitasking.
 
 **Observed Metrics Under Load:**  
 CPU:  4%
 Memory:  86%
 Disk:  0%
+
+**Analysis:**
+CPU utilization decreased under load, indicating CPU was not the bottleneck.
+Memory usage increased from 81% to 86%, suggesting limited available RAM during multitasking.
+Disk usage remained minimal, ruling out storage-related performance issues.
 
 **Actions Taken:**  
 Closed unused applications and browser tabs.
@@ -31,7 +36,7 @@ Memory:  55%
 Disk:  0%
 
 **Conclusion:**  
-System slowdown correlated with increased memory usage during heavy multitasking.
+Performance degradation during multitasking was primarily memory-related. Reducing active applications significantly improved available memory and overall system responsiveness.
 
 **What I Learned:**  
-Task Manager performance metrics help identify resource bottlenecks and confirm whether slowdown is resource-related.
+Evaluating each resource independently (CPU, memory, disk) is critical before assuming the cause of system slowdown. Memory saturation can impact responsiveness even when CPU and disk usage remain low.
