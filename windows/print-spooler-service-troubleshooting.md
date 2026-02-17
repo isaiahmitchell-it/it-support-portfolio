@@ -39,3 +39,13 @@ Service running normally.
 
 What I Learned:
 Many printer-related issues stem from the Print Spooler service. Verifying service status is a fast first-step diagnostic in printer failures.
+
+**Additional Diagnostic Considerations:**
+
+If the Print Spooler service is running, next steps would include:
+1. Checking the print queue for stuck jobs.
+2. Clearing pending print jobs.
+3. Verifying printer status (online/offline).
+4. Restarting the printer device.
+5. Reinstalling or updating the printer driver if necessary.
+
